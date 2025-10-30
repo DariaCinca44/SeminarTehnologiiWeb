@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <script>
+        window.onload= ()=>{
+            const form= document.getElementById("form");
+            const nameInput= document.getElementById("name");
+            const phoneInput=document.getElementById("phone");
+            const tableBody=document.getElementById("body");
+
+            const Submit = (e) => {
+                e.preventDefault();
+
+            const name = nameInput.value.trim();
+            const phone=phoneInput.value.trim();
+
+            const row=document.createElement("tr");
+            const nameCell=document.createElement("td");
+            const phoneCell=document.createElement("td");
+
+            nameCell.textContent=name;
+            phoneCell.textContent=phone;
+
+            row.appendChild(nameCell);
+            row.appendChild(phoneCell);
+            tableBody.appendChild(row);
+            form.reset();
+            }
+            form.onsubmit=Submit;
+        }
+    </script>
+</head>
+<body>
+    <h1>Agenda telefonica</h1>
+    <table border="1" width="400">
+        <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Telefon</th>
+        </tr>
+        </thead>
+        <tbody id="body"></tbody>
+    </table>
+    <br><br><br>
+    <h2>Adauga persoana</h2>
+    <form id="form">
+        <label for="name">Nume:</label>
+        <input type="text" id="name" required/>
+        <label for="phone">Numar de telefon:</label>
+        <input type="text" id="phone" required/>
+        <hr>
+        <button type="submit">Adauga</button>
+    </form>
+</body>
+</html>

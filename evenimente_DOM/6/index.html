@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div>
+        <form>
+            <input id="inputName" type="text" placeholder="Name">
+            <br /> <br />
+            <input id="inputAge" type="number" placeholder="Age"> <br /> <br />
+            <input value="submit" onclick="sendData()" type="button"> <br /><br />
+        </form>
+    </div>
+    <div id="tableData"></div>
+    <div>
+        <h2>Cauta persoana dupa Id</h2>
+        <form>
+            <label for="search">Id:</label>
+            <input id="search" type="number"/>
+            <br>
+            <input value="Cauta" onclick="searchById()" type="button"/>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+
+</html>
