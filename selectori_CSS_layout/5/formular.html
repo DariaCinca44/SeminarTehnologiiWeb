@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Contact form</title>
+       <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 25px;
+        }
+
+        textarea{
+            min-height: 200px;
+            resize: vertical;
+        }
+
+        .formular{
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        label{
+            display: block;
+            margin: 12px 0 6px;
+        }
+
+        select{
+            background-color: white;
+        }
+
+        button{
+            color: white;
+            background-color: green;
+            border: 0;
+            width: auto;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="text"], select, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+       </style>
+    </head>
+    <body>
+        <div class="formular">
+            <h3><b>Contact Form</b></h3>
+            <form action="javascript:" method="post">
+            <label for="firstName"><b>First Name</b></label>
+            <input type="text" placeholder="Your name" name="firstName" required>
+            
+            <label for="lastName"><b>Last Name</b></label>
+            <input type="text" placeholder="Your last name" name="lastName" required>
+        
+            <label for="country"><b>Country</b></label>
+            <select name="country">
+                <option value="hungary" selected>Hungary</option>
+                <option value="romania">Romania</option>
+                <option value="italy">Italy</option>
+            </select>
+        
+            <label for="subject"><b>Subject</b></label>
+            <textarea name="subject" placeholder="Write something..."></textarea>
+
+            <div class="actions">
+                <button type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
