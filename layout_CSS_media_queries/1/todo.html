@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>TO DO</title>
+        <style>
+            body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display:flex;
+    height: 100vh;
+}
+
+.column {
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 16px;
+    background-color: salmon;
+    border: 2px solid black;
+}
+
+.column:last-child{
+    border-right: none;
+}
+
+.column-item{
+    background-color: lightsalmon;
+    border:1px solid black;
+    padding: 12px;
+}
+.column-item:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <div class="column-item">Item</div>
+                <div class="column-item">Item</div>
+                <div class="column-item">Item</div>
+            </div>
+            <div class="column">
+                <div class="column-item">Item</div>
+                <div class="column-item">Item</div>
+                <div class="column-item">Item</div>
+            </div>
+            <div class="column">
+                <div class="column-item">Item</div>
+                <div class="column-item">Item</div>
+                <div class="column-item">Item</div>
+            </div>
+        </div>
+    </body>
+</html>
