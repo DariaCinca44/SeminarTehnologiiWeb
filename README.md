@@ -1,1 +1,1 @@
-# seminar_introductiv
+# SeminarTehnologiiWeb
